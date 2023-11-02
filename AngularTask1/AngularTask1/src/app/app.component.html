@@ -1,0 +1,30 @@
+<header><h1>Angular Project-1</h1></header>
+<div class="main">
+  <Section class="form1">
+    <form action="">
+       Enter Your name:&nbsp; <input [(ngModel)]="name1" type="text" name="name"><br><br>
+       Enter Your Email:&nbsp; <input  [(ngModel)]="name2" type="email" name="email"><br><br>
+       Enter your city:&nbsp;<input [(ngModel)]="name3" type="text" name="city"><br><br>
+       Enter your gender:&nbsp;&nbsp;<select [(ngModel)]="name4" name="gender" >
+                                        <option value="Female">Female</option>
+                                        <option value="Male">Male</option>
+                                      </select><br><br>
+       
+       <button type="submit" (click)="onclick()">Submit</button>
+       
+    </form>
+
+  </Section>
+  
+  <section class="form2">
+    <form>
+      <p>Your Name: {{name1}}</p>
+      <p>Your Email: {{name2}}</p>
+      <p>Your City: {{name3}}</p>
+      <p>Your Gender: {{name4}}</p>
+      
+
+    </form>
+
+  </section>
+</div>

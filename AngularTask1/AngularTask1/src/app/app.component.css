@@ -1,0 +1,29 @@
+.main
+{
+    display: flex;
+    justify-content: space-around;
+    border: 2px black;
+}
+section{
+    margin: 2rem;
+    padding: 2rem;  
+}
+.form1{
+    padding: 2rem;
+    border: solid  rgb(84, 80, 80);
+    border-radius: 5%;
+
+}
+.form2{
+    border: solid  rgb(84, 80, 80);
+    border-radius: 5%;
+    border-spacing: 5rem;
+   
+}
+.form2 form p{
+    width: 17rem;
+}
+header h1{
+    text-align: center;
+    margin: 2rem;
+}
