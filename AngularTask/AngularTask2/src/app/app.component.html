@@ -1,0 +1,22 @@
+
+<h4>Angular Project-2</h4>
+<h1>Login Form</h1>
+<form style="display: flex;justify-content: center;" id="form">
+  <div class="main">
+    <Label>Admin Login</Label><br><br>
+    <label  class="inn" >User Id: </label><input type="text" [(ngModel)]="user" required name="user-id"><br><br>
+     <label  class="inn" >Password: </label><input type="password" [(ngModel)]="pass" name="password" id=""><br><br>
+    <input type="button" value="submit" (click)="verf()" class="sub">
+  </div>
+   
+
+ 
+</form>
+<h1 *ngIf="verify; then ifblock else elseblock"></h1>
+<ng-template #ifblock>
+  <br><h3>Welcome Admin</h3>
+ 
+</ng-template>
+ <ng-template #elseblock >  <h4 style="color: red;" >Invalid input</h4>
+ </ng-template>
+

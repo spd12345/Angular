@@ -6,11 +6,13 @@
        Enter Your Email:&nbsp; <input  [(ngModel)]="name2" type="email" name="email"><br><br>
        Enter your city:&nbsp;<input [(ngModel)]="name3" type="text" name="city"><br><br>
        Enter your gender:&nbsp;&nbsp;<select [(ngModel)]="name4" name="gender" >
+                                        <option value=" "> </option>
                                         <option value="Female">Female</option>
                                         <option value="Male">Male</option>
                                       </select><br><br>
        
        <button type="submit" (click)="onclick()">Submit</button>
+       <button type="reset" style="margin-left: 2rem;">Reset</button>
        
     </form>
 
