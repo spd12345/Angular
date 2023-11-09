@@ -1,0 +1,12 @@
+.productContainer{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+
+}
+.product{
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+    border-radius: 1%;
+    
+}
