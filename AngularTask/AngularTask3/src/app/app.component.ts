@@ -12,7 +12,7 @@ export class AppComponent {
     this.fetchData(this.api)
   }
     data:any;
-   api: string= 'https://fakestoreapi.com/products';
+   api: string= 'https://api.nasa.gov/planetary/apod';
   // fetechData(api:string){
   //   fetch(api)
   //           .then((response)=>{
