@@ -1,0 +1,36 @@
+<app-test [hii]='users'></app-test><!---Parent to child-->
+<app-task2 (parentFun)="parentFun($event)" ></app-task2><!--child to parent-->
+<!--PIPES-->
+<h2>{{name | uppercase}}</h2>
+<h2 >{{name | lowercase}}</h2>
+<h2 >{{name | titlecase}}</h2>
+<h2 >{{today | date}}</h2>
+<h2 >{{today | date:fullDate}}</h2>
+<h2 >{{name | slice:1:5}}</h2>
+<h2>{{money| currency:'USD'}}</h2>
+<!--route-->
+
+
+<a routerLink="test3">To-test</a><router-outlet></router-outlet>
+
+
+<!--custom directive ( later---)-->
+
+<!-- ngClass directive-->
+    <!--it uses to dynamically manupulate 
+        the elements it won't manupulate the dom
+        now lets see one of the example-->
+
+<div class="box-div" [ngClass]="{changeBg: binding !=''}">
+    <input type="text" [(ngModel)]="binding" >
+</div>
+
+<!--view child component-->
+<div>
+    <label >dob: </label>
+    <input type="date" #dobInput (blur)="calcAge()">
+</div>
+<div>
+    <label >age: </label>
+    <input type="text" #ageInput >
+</div>
